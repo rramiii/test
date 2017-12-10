@@ -34,6 +34,7 @@ this application was built to solve sorting of random cards based on route start
     2- adding estimated arrival time.
     3- this field is huge and can add lot of features that might be inspired from google maps.
 
+- to start the application, call index.php from your browser.
 
 
 
