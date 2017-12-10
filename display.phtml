@@ -1,0 +1,22 @@
+<?php
+/**
+ * simple display for cards sort result
+ */
+?>
+
+<ul style="list-style: none;">
+    <?php for($i = 0; $i < count($sortedRoutes); $i++): ?>
+        <li>
+            <?php echo $i+1 ?>. Take <?php echo $sortedRoutes[$i]["transportName"]?> from
+            <?php echo($sortedRoutes[$i]["start"] ." to ". $sortedRoutes[$i]["end"]); ?>,
+            <?php echo " ".join(", ", $sortedRoutes[$i]["transportDetails"])?>
+        </li>
+    <?php endfor; ?>
+    <?php if($i == 0): ?>
+        No Route Found ... Try with different set of cards please.
+    <?php else: ?>
+        <li>
+            <?php echo $i+1 ?>. You have arrived at your final destination.
+        </li>
+    <?php endif; ?>
+</ul>
