@@ -12,7 +12,7 @@
             <?php echo " ".join(", ", $sortedRoutes[$i]["transportDetails"])?>
         </li>
     <?php endfor; ?>
-    <?php if($i == 0): ?>
+    <?php if(is_null($sortedRoutes) || empty($sortedRoutes)): ?>
         No Route Found ... Try with different set of cards please.
     <?php else: ?>
         <li>
