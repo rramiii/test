@@ -35,7 +35,7 @@ this application was built to solve sorting of random cards based on route start
     3- this field is huge and can add lot of features that might be inspired from google maps.
 
 - to start the application, call index.php from your browser.
-- complexity digree: (n - 1)(n - 2)
+- complexity digree: 0 if n = 0 OR (n - 1)(n - 2) if n > 0, where n is the number of cards
 
 
 
