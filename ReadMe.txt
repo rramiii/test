@@ -25,9 +25,9 @@ this application was built to solve sorting of random cards based on route start
     3- used simple class as main sorter which has only one function, this class can be integrated
     and used in any system and can be improved later.
     4- used algorithm, will try to reduce number of loop as much as possible by adding every card
-    to final route whenever final route contains any right neighbor card
-    5- used algorithm is now built from scratch as required, didn't use any resource to build it.
-    6- wan't able to meet/create all required files due to time limit.
+    to final route whenever final route contains the right neighbor card
+    5- used algorithm is built in the time of writing this code from scratch as required, didn't use any resource to build it.
+    6- wasn't able to meet/create all required files due to time limit.
 
 - suggestions:
     1- add weight to routes and enhance this algorithm to provide best route.
