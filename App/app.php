@@ -121,7 +121,7 @@ class App {
 
         } else {
             header('X-PHP-Response-Code: 404', true, 404);
-            require_once(dirname(__FILE__) . '/404.phtml');
+            require_once(ROOT . '/404.phtml');
         }
     }
 }
