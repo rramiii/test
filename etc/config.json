@@ -1,0 +1,8 @@
+{
+  "name":"Test",
+  "version":"1.0.0",
+  "DB":{},
+  "modules": [
+    "trip_route"
+  ]
+}

@@ -1,0 +1,26 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: rami
+ * Date: 22/12/17
+ * Time: 13:57
+ */
+$tt = "ff";
+?>
+
+<ul style="list-style: none;">
+    <?php foreach($this->sortedRoute as $key => $route): ?>
+        <li>
+            <?php echo $key+1 ?>. Take <?php echo $route->getTransportName()?> from
+            <?php echo($route->getStart() ." to ". $route->getEnd()); ?>,
+            <?php echo " ".join(", ", $route->getDetails())?>
+        </li>
+    <?php endforeach; ?>
+    <?php if(is_null($this->sortedRoute) || empty($this->sortedRoute)): ?>
+        No Route Found ... Try with different set of cards please.
+    <?php else: ?>
+        <li>
+            <?php echo $key+1 ?>. You have arrived at your final destination.
+        </li>
+    <?php endif; ?>
+</ul>

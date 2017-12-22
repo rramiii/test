@@ -1,0 +1,21 @@
+{
+  "name": "trip route",
+  "description" : "",
+  "version": "0.0.1",
+  "routes":{
+    "plan_trip": "organise_trip"
+  },
+  "requires":{
+    "plan_trip":{
+      "model":[
+        "cardSort",
+        "card"
+      ]
+    }
+  },
+  "view": {
+    "templates": {
+      "plan_trip": "trip/organized"
+    }
+  }
+}
